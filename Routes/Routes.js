@@ -5,5 +5,6 @@ const Controller = require('../Controller/Controller');
 router.get('/', Controller.Home);
 router.get('/tasks', Controller.GetTasks);
 router.post('/tasks', Controller.PostTasks);
+router.delete('/task/:id', Controller.DeleteTask);
 
 module.exports = router;
